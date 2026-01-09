@@ -9,7 +9,7 @@ import java.util.Scanner;
             jmlMhs = sc.nextInt();
 
             int [] nilaiMhs = new int [jmlMhs];
-  
+   
             for (int x = 0; x < jmlMhs; x++) {
                 System.out.print("Masukkan nilai mahasiswa ke-" + (x+1) + " : ");
                 nilaiMhs[x] = sc.nextInt();
