@@ -7,5 +7,10 @@ public class LatihanCaseMethodArray1D {
          int jmlNilai = sc.nextInt();
 
          int [] dataNilai = new int [jmlNilai];
+
+         for (int x = 0; x < jmlNilai ; x++) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + (x+1) + " : ");
+            dataNilai[x] = sc.nextInt();
+         }
     }
 }
