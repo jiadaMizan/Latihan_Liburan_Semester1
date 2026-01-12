@@ -12,5 +12,11 @@ public class LatihanCaseMethodArray1D {
             System.out.print("Masukkan nilai mahasiswa ke-" + (x+1) + " : ");
             dataNilai[x] = sc.nextInt();
          }
+         
+         System.out.println("Masukkan nilai yang ingin di cari");
+         System.out.println("(nilai yang harus dicari adalah nilai yang sudah diinput diatas) : ");
+         int cari = sc.nextInt();
+
+         sc.close();
     }
 }
