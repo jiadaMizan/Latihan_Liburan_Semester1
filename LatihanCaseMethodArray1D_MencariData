@@ -5,5 +5,7 @@ public class LatihanCaseMethodArray1D {
 
          System.out.print("Masukkan banyaknya nilai yang akan diinput : ")
          int jmlNilai = sc.nextInt();
+
+         int [] dataNilai = new int [jmlNilai];
     }
 }
