@@ -20,11 +20,13 @@ public class LatihanCaseMethodArray1D {
         for (int x = 0; x < jmlNilai; x++) {
             if (cari == dataNilai[x]) {
                 ketemu = x;
+                System.out.println("Nilai " +(cari)+ " ketemu di array ke-" + (ketemu+1));
                 break;
             }
         }
-
-        System.out.println("Nilai " +(cari)+ " ketemu di array ke-" + (ketemu+1));
+        if (ketemu == 0 && cari != dataNilai[0]) {
+            System.out.println("Nilai " + (cari) + (" tidak ditemukan di array manapun"));
+        }
          sc.close();
     }
 }
