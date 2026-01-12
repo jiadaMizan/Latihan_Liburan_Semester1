@@ -7,7 +7,7 @@ public class LatihanCaseMethodArray1D {
          int jmlNilai = sc.nextInt();
 
          int [] dataNilai = new int [jmlNilai];
-
+        int ketemu = 0;
          for (int x = 0; x < jmlNilai ; x++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (x+1) + " : ");
             dataNilai[x] = sc.nextInt();
@@ -17,6 +17,14 @@ public class LatihanCaseMethodArray1D {
          System.out.println("(nilai yang harus dicari adalah nilai yang sudah diinput diatas) : ");
          int cari = sc.nextInt();
 
+        for (int x = 0; x < jmlNilai; x++) {
+            if (cari == dataNilai[x]) {
+                ketemu = x;
+                break;
+            }
+        }
+
+        System.out.println("Nilai " +(cari)+ " ketemu di array ke-" + (ketemu+1));
          sc.close();
     }
 }
