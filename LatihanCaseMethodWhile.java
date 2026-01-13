@@ -25,9 +25,10 @@ public class LatihanCaseMethodWhile {
             double rata = (double) total / jumlah;
             System.out.println("Jumlah nilai : " + (jumlah));
             System.out.println("Total nilai : " + (total));
-            System.out.println("Total nilai : " + (total));
+            System.out.println("Rata-rata nilai : " + (rata));
+        } else {
+            System.out.println("Tidak ada nilai yang dimasukkan");
         }
-
         sc.close();
     }
 }
