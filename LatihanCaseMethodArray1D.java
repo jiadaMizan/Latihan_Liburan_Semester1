@@ -23,9 +23,9 @@ public class LatihanCaseMethodArray1D {
                 System.out.println("Nilai " +(cari)+ " ketemu di array ke-" + (ketemu+1));
                 break;
             }
-        }
-        if (ketemu == 0 && cari != dataNilai[0]) {
-            System.out.println("Nilai " + (cari) + (" tidak ditemukan di array manapun"));
+            if (ketemu == 0 && cari != dataNilai[0]) {
+                System.out.println("Nilai " + (cari) + (" tidak ditemukan di array manapun"));
+                }
         }
          sc.close();
     }
