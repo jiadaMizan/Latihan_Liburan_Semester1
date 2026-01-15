@@ -3,13 +3,13 @@ public class LatihanCaseMethodWhileKASIR {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
 
-        boolean konfirmasi = false;
-        int totPilih = 0, totJmlBeli = 0;
+        boolean konfirmasi=true;
+        int totPilih = 0, totJmlBeli = 0, jmlPerulangan = 0;
 
         System.out.println("=== TOKO MADURA SUNDA PAK ASEP ===");
         System.out.println();
 
-        while (konfirmasi = true) {
+        while (konfirmasi) {
             System.out.println("Daftar barang : ");
             System.out.println("1. Buku tulis : 5000");
             System.out.println("2. Pulpen     : 3000");
@@ -22,16 +22,14 @@ public class LatihanCaseMethodWhileKASIR {
             int jmlBeli = sc.nextInt();
             totJmlBeli += jmlBeli;
             sc.nextLine();
+
             System.out.print("Apakah anda ingin melanjutkan pembelian? (y/n)");
-            System.out.println();
             String lanjut = sc.nextLine();
-            if (lanjut == "y" || lanjut == "Y") {
-                konfirmasi = true;
+            
+            if (lanjut.equalsIgnoreCase("n") ) {
+                konfirmasi = false;
             }
-
-
+            jmlPerulangan++;
         }
-
-
     }
 }
