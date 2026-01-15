@@ -55,6 +55,16 @@ public class LatihanCaseMethodWhileKASIR {
 
         System.out.println("--- Total Belanjaan Anda---");
         System.out.println("Total harga yang harus dibayar : Rp." + (totKeseluruhan));
-        System.out.println("");
+        System.out.println("Masukkan uang anda yang akan dibayar : Rp.");
+        int bayar = sc.nextInt();
+
+        while (bayar < totKeseluruhan) {
+            System.out.println("Uang untuk pembayaran kurang, isi lagi dengan harga yang sesuai");
+            System.out.println("Masukkan uang anda yang akan dibayar : Rp.");
+            bayar = sc.nextInt();
+        }
+        
+        int kembalian = bayar - totKeseluruhan;
+        System.out.println("Kembalian sebanyak Rp." + kembalian);
     }
 }
