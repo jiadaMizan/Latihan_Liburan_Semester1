@@ -17,9 +17,25 @@ public class LatihanCaseMethodWhileLoginAdmin {
 
             if (inputUsername == usernameBenar && inputPassword == passwordBenar) {
                 System.out.println("Login telah berhasil");
+                break;
+            } else if (inputUsername == usernameBenar || inputPassword == passwordBenar) {
+                kesempatan --;
+                System.out.println("Cek kembali username atau password");
+                System.out.println("Peringatan! Percobaan tersisa " + kesempatan);
+                System.out.println();
+            } else {
+                kesempatan--;
+                System.out.println("Username dan password salah!");
+                System.out.println("Peringatan! Percobaan tersisa " + kesempatan);
+                System.out.println();
             }
 
+            if (kesempatan <= 1 && !loginBerhasil) {
+                System.out.println("Akun terkunci, silahkan menghubungi kantor pusat untuk membuka");
+                System.out.println();
+                break;
+            }
         }
-
+        sc.close();
     }
 }
