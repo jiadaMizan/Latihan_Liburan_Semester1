@@ -15,10 +15,10 @@ public class LatihanCaseMethodWhileLoginAdmin {
             System.out.print("Masukkan password : ");
             String inputPassword = sc.nextLine();
 
-            if (inputUsername == usernameBenar && inputPassword == passwordBenar) {
+            if (inputUsername.equalsIgnoreCase(usernameBenar) && inputPassword.equalsIgnoreCase(passwordBenar)) {
                 System.out.println("Login telah berhasil");
                 break;
-            } else if (inputUsername == usernameBenar || inputPassword == passwordBenar) {
+            } else if (inputUsername.equalsIgnoreCase(usernameBenar) || inputPassword.equalsIgnoreCase(passwordBenar)) {
                 kesempatan --;
                 System.out.println("Cek kembali username atau password");
                 System.out.println("Peringatan! Percobaan tersisa " + kesempatan);
@@ -30,7 +30,7 @@ public class LatihanCaseMethodWhileLoginAdmin {
                 System.out.println();
             }
 
-            if (kesempatan <= 1 && !loginBerhasil) {
+            if (kesempatan <= 0 && !loginBerhasil) {
                 System.out.println("Akun terkunci, silahkan menghubungi kantor pusat untuk membuka");
                 System.out.println();
                 break;
