@@ -4,7 +4,7 @@ public class LatihanCaseMethodWhileKASIR {
         Scanner sc = new Scanner (System.in);
 
         boolean konfirmasi=true;
-        int totPilih = 0, totJmlBeli = 0, jmlPerulangan = 0, harga, totHarga = 0, totKeseluruhan = 0;
+        int harga, totHarga = 0, totKeseluruhan = 0;
 
         System.out.println("=== TOKO MADURA SUNDA PAK ASEP ===");
         System.out.println();
@@ -22,10 +22,8 @@ public class LatihanCaseMethodWhileKASIR {
                 System.out.println();
                 continue;
             }
-            totPilih += pilih;
             System.out.print("Jumlah beli : ");
             int jmlBeli = sc.nextInt();
-            totJmlBeli += jmlBeli;
             sc.nextLine();
             System.out.println();
 
@@ -60,11 +58,15 @@ public class LatihanCaseMethodWhileKASIR {
 
         while (bayar < totKeseluruhan) {
             System.out.println("Uang untuk pembayaran kurang, isi lagi dengan harga yang sesuai");
-            System.out.println("Masukkan uang anda yang akan dibayar : Rp.");
+            System.out.print("Masukkan uang anda yang akan dibayar : Rp.");
             bayar = sc.nextInt();
+            System.out.println();
         }
         
         int kembalian = bayar - totKeseluruhan;
         System.out.println("Kembalian sebanyak Rp." + kembalian);
+        System.out.println("Terimakasih telah membeli di toko Pak Asep");
+
+        sc.close();
     }
 }
