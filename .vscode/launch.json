@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LatihanCaseMethodFunctionRataRata",
+            "request": "launch",
+            "mainClass": "LatihanCaseMethodFunctionRataRata",
+            "projectName": "LIBURAN_SEMESTER1_b2c5719b"
+        },
+        {
+            "type": "java",
             "name": "LatihanCaseMethodFunctionVoid",
             "request": "launch",
             "mainClass": "LatihanCaseMethodFunctionVoid",
